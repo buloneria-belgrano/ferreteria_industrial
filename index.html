@@ -1,0 +1,270 @@
+<html><head>
+    <title>Buloneria Belgrano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Contenedor del slider */
+        .slider-container {
+          width: 100%;
+          height: 520px; /* Tamaño más grande */
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: #f8f8f8;
+        }
+    
+        /* Track que contiene las imágenes */
+        .slider-track {
+          display: flex;
+          transition: transform 1s ease-in-out;
+        }
+    
+        /* Imágenes dentro del slider */
+        .slider-track img {
+          width: 100vw; /* Ocupa todo el ancho de la pantalla */
+          height: 520px;
+          object-fit: cover;
+          border-radius: 5px;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+      </style>
+
+
+  <script async data-id="five-server" data-file="c:\Users\Usuario\Documents\visual studio\colegio obispo\buloneria\archivos\index.html" type="application/javascript" src="/fiveserver.js"></script>
+  </head>
+  <body class="bg-gray-100">
+    <!-- Top Bar -->
+    <div class="bg-green-800 text-white text-sm py-2 px-4 flex justify-between items-center">
+      <div>
+        🔥 6 Cuotas SIN INTERES | 15% OFF transferencia | Envio gratis desde $89.999 🔥
+      </div>
+      <div class="flex items-center">
+        <i class="fas fa-shopping-cart mr-2"></i>
+        <span>$0</span>
+      </div>
+    </div>
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+      <div class="container mx-auto flex justify-between items-center py-4 px-4">
+        <div class="flex items-center">
+          <img alt="Buloneria Belgrano Logo" class="mr-4" height="50" src="https://storage.googleapis.com/a1aa/image/EAhsOkWn89lZDKCtEBeb47ek_kziHE7ZYLQOs_3fiDs.jpg" width="100">
+          <span class="text-2xl font-bold text-green-800">BULONERIA BELGRANO</span>
+        </div>
+        <div class="flex items-center w-full max-w-lg">
+          <input class="w-full border border-gray-300 rounded-l-md py-2 px-4" placeholder="Buscar productos" type="text">
+          <select class="border border-gray-300 py-2 px-4 rounded-r-md">
+            <option>POR CATEGORÍA</option>
+          </select>
+          <button class="bg-green-800 text-white py-2 px-4 rounded-r-md">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center py-2 px-4" style="
+        padding-bottom: 1.5rem;
+    ">
+            <a class="text-purple-700 font-bold flex items-center" href="#">
+              <i class="fas fa-fire mr-2"></i>
+              OFERTAS
+            </a>
+            <a class="text-gray-700" href="#">Marcas</a>
+            <a class="text-gray-700" href="#">Cesped y jardin</a>
+            <a class="text-gray-700" href="#">Generadores y compresores</a>
+            <a class="text-gray-700" href="#">Herramientas</a>
+            <a class="text-gray-700" href="#">Seguridad e higiene</a>
+            <a class="text-gray-700" href="#">Soldadura</a>
+            <a class="text-red-700" href="#">BOSCH</a>
+            <a class="text-yellow-700" href="#">Lusqtoff</a>
+            <a class="text-gray-700" href="#">¿Quienes somos?</a>
+          </div>
+    </nav>
+    
+
+  <!-- SLIDER DE IMÁGENES AUTOMÁTICO -->
+  <div class="slider-container">
+    <div class="slider-track" style="transform: translateX(0vw);">
+      <img src="imagen1.jpg" alt="Imagen 1">
+      <img src="imagen2.jpg" alt="Imagen 2">
+      <img src="imagen3.jpg" alt="Imagen 3">
+    </div>
+  </div>
+
+  <!-- SCRIPT PARA EL EFECTO DE DESPLAZAMIENTO -->
+  <script>
+    let track = document.querySelector(".slider-track");
+    let images = document.querySelectorAll(".slider-track img");
+    let index = 0;
+
+    function slideNext() {
+      index++;
+      if (index >= images.length) {
+        index = 0; // Reinicia el carrusel
+      }
+      track.style.transform = `translateX(-${index * 100}vw)`;
+    }
+
+    setInterval(slideNext, 4000); // Muestra cada imagen durante 4 segundos antes de cambiar
+  </script>
+
+    <!-- Main Content -->
+    <main class="container mx-auto py-8 px-4">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8" style="padding-top: 20px;">
+        <div class="bg-green-800 text-white text-center py-4 rounded-md">
+          <i class="fas fa-map-marker-alt text-2xl mb-2"></i>
+          <p>Retirá gratis en nuestras sucursales</p>
+        </div>
+        <div class="bg-green-800 text-white text-center py-4 rounded-md">
+          <i class="fas fa-gift text-2xl mb-2"></i>
+          <p>Contamos con beneficios increibles</p>
+        </div>
+        <div class="bg-green-800 text-white text-center py-4 rounded-md">
+          <i class="fas fa-truck text-2xl mb-2"></i>
+          <p>El envío mas rápido a todo el país</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4">
+
+        <div class="text-center">
+          <img alt="Herramientas Manuales" class="rounded-full mx-auto mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/H0ig79L-mLGo2hR_Lxc5LLFDMhOf4B9-1F-6E7Y0Dlc.jpg" width="150">
+          <p>HERRAMIENTAS MANUALES</p>
+        </div>
+        <div class="text-center">
+          <img alt="Herramientas Eléctricas" class="rounded-full mx-auto mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/uUhz7tgg4HPGBEkTrgK6w9al_IjCWdX1ixsVwl0pSnc.jpg" width="150">
+          <p>HERRAMIENTAS ELECTRICAS</p>
+        </div>
+        <div class="text-center">
+          <img alt="Soldadura" class="rounded-full mx-auto mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/ROVJxvGf897Ff0qFZa-97WFJlkMoL0dMrRuiKh6oNeY.jpg" width="150">
+          <p>SOLDADURA</p>
+        </div>
+        <div class="text-center">
+          <img alt="Ferretería" class="rounded-full mx-auto mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/k2leY5FLJfgLT1gpn2uyH9PU3i7RHT6fUtmcadAOj9g.jpg" width="150">
+          <p>FERRETERIA</p>
+        </div>
+        <div class="text-center">
+          <img alt="Bosque y Jardín" class="rounded-full mx-auto mb-2" height="150" src="https://storage.googleapis.com/a1aa/image/TqliM1tpg45vZoHm6WKMfLAkEsipqIMV1JobL8GoF8E.jpg" width="150">
+          <p>BOSQUE Y JARDIN</p>
+        </div>
+      </div>
+    </main>
+    
+    <div class="container mx-auto p-4">
+      <h1 class="text-3xl font-bold mb-4">
+        Herramientas <span class="text-green-600">Electricas</span>
+      </h1>
+      <a class="text-green-600 underline mb-6 inline-block" href="#">VER MAS PRODUCTOS</a>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <img alt="Compresor 12 V 140 PSI TTAC1401" class="w-full h-48 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/gj4wu3sMkD0Qw4OD4FVlvUYc6t5zzL28fZGK59H0MbM.jpg" width="300">
+          <h2 class="text-lg font-bold">Compresor 12 V 140 PSI TTAC1401</h2>
+          <p class="text-gray-600">Herramientas electricas</p>
+          <p class="text-2xl font-bold mt-2">$56.636</p>
+          <p class="text-gray-600">6 CUOTAS SIN INTERES DE: $9.439</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <img alt="Dremel Versaflame (Soplete) + 4 Puntas de regalo" class="w-full h-48 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/J05rwY-MjM8rq1NdTjHOTlexPFb1J2K8ULod_6nw8Rs.jpg" width="300">
+          <h2 class="text-lg font-bold">Dremel Versaflame (Soplete) + 4 Puntas de regalo</h2>
+          <p class="text-gray-600">Herramientas electricas</p>
+          <p class="text-2xl font-bold mt-2">$155.292</p>
+          <p class="text-gray-600">6 CUOTAS SIN INTERES DE: $25.882</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <img alt="Taladro Atornillador Inalambrico 18v Milwaukee 2606-259ca" class="w-full h-48 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/p9h62h39xBcVqpcJWBzg92E2xsfFJqwUkP_UOo2o8s4.jpg" width="300">
+          <h2 class="text-lg font-bold">Taladro Atornillador Inalambrico 18v Milwaukee 2606-259ca</h2>
+          <p class="text-gray-600">Herramientas electricas</p>
+          <p class="text-2xl font-bold mt-2">$523.843</p>
+          <p class="text-gray-600">6 CUOTAS SIN INTERES DE: $87.307</p>
+          <p class="text-green-600 font-bold">Envío gratis</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow relative">
+          <div class="absolute top-2 left-2 bg-green-600 text-white rounded-full px-2 py-1 text-sm">-5%</div>
+          <img alt="Dremel Stylo+ Minitorno Con 11 Accesorios" class="w-full h-48 object-cover mb-4" height="200" src="https://storage.googleapis.com/a1aa/image/cVPhfXJN9sLJALxRc5XplXqO-OQmB9uJzh7YCA9J-NA.jpg" width="300">
+          <h2 class="text-lg font-bold">Dremel Stylo+ Minitorno Con 11 Accesorios</h2>
+          <p class="text-gray-600">Herramientas electricas</p>
+          <p class="text-gray-600 line-through">$91.670</p>
+          <p class="text-2xl font-bold text-green-600 mt-2">$87.499</p>
+          <p class="text-gray-600">6 CUOTAS SIN INTERES DE: $14.583</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container mx-auto p-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Herramientas Eléctricas -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-gray-500">Categoría</p>
+          <h2 class="text-2xl font-bold">Herramientas <span class="text-green-700">Eléctricas</span></h2>
+          <img alt="Electric drill and accessories" class="my-4" height="200" src="https://storage.googleapis.com/a1aa/image/mFsNaOY3-RFuepF_t_zt_Ww_JX70Ih57vBMeGJc7-Sc.jpg" width="300">
+          <a class="text-green-700 underline" href="#">VER MÁS</a>
+        </div>
+
+        <!-- Herramientas Manuales -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-gray-500">Categoría</p>
+          <h2 class="text-2xl font-bold">Herramientas <span class="text-green-700">Manuales</span></h2>
+          <img alt="Manual tools set" class="my-4" height="200" src="https://storage.googleapis.com/a1aa/image/lsg2q5Ai8MfZS0VOKOwcR39dwuQ0mM0p-yTuN1OEzmY.jpg" width="300">
+          <a class="text-green-700 underline" href="#">VER MÁS</a>
+        </div>
+        <!-- Bosque y Jardín -->
+        <div class="bg-white p-6 rounded-lg shadow-lg">
+          <p class="text-gray-500">Categoría</p>
+          <h2 class="text-2xl font-bold">Bosque y <span class="text-green-700">Jardín</span></h2>
+          <img alt="Chainsaw" class="my-4" height="200" src="https://storage.googleapis.com/a1aa/image/IvgcAtOJOoIPEYNV50oA0oTsq3zxeayOCOkXzs4Vb5s.jpg" width="300">
+          <a class="text-green-700 underline" href="#">VER MÁS</a>
+        </div>
+      </div>
+    </div>
+    
+    <footer class="bg-green-800 text-center py-8" style="color:white;">
+      <div class="mb-8">
+        <h2 class="text-lg font-bold mb-4">INSTITUCIONAL</h2>
+        <ul>
+          <li class="mb-2"><a class="hover:underline" href="#">Nuestras sucursales</a></li>
+          <li class="mb-2"><a class="hover:underline" href="#">Políticas de Privacidad</a></li>
+          <li class="mb-2"><a class="hover:underline" href="#">Términos y Condiciones</a></li>
+        </ul>
+      </div>
+      <div class="border-t border-white pt-4">
+        <p class="mb-4">
+          Creado por el equipo <span class="font-bold">Buloneria Belgrano</span> © 2023 Todos los Derechos Reservados.
+        </p>
+        <div class="flex justify-center items-center space-x-4">
+          <img alt="QR code for data fiscal" class="w-12 h-12" src="https://storage.googleapis.com/a1aa/image/gxi885oSul-AXBOxewhhA3L9Bmd21psb66PddPP03BU.jpg">
+          <img alt="CACE logo" class="w-12 h-12" src="https://storage.googleapis.com/a1aa/image/eKL4KFARHVqfRhIciogXrgp1zwZKlWeifXSqY-6O7kQ.jpg">
+        </div>
+      </div>
+      <div class="fixed bottom-4 right-4">
+        <button class="bg-white text-green-800 rounded-full p-2 shadow-lg">
+          <i class="fas fa-chevron-up"></i>
+        </button>
+      </div>
+    </footer>
+    
+    <!-- Script para el Slider -->
+    <script>
+      let currentSlide = 0;
+      const slides = document.querySelectorAll('[id^="slide-"]');
+      const totalSlides = slides.length;
+      
+      function showSlide(index) {
+        slides.forEach((slide, i) => {
+          slide.style.opacity = (i === index) ? '1' : '0';
+        });
+      }
+      
+      function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+      }
+      
+      setInterval(nextSlide, 5000);
+    </script>
+  
+
+</body></html>
